@@ -49,6 +49,7 @@ class Comment(models.Model):
     approved = models.BooleanField(default=False)
 
     class Meta:
+        "order by"
         ordering = ['created_on']
 
     def __str__(self):
